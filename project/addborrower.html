@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Sell
+{% endblock %}
+
+{% block main %}
+ADD BORROWER
+<form action="/addborrower" method="post">
+
+
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" id="email" name="email" placeholder="email" type="number" min="1">
+    </div>
+    <button class="btn btn-primary" type="submit">ADD BORROWER</button>
+</form>
+{% endblock %}

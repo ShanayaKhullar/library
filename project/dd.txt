@@ -1,0 +1,39 @@
+'''
+#Write a Python program that prompts the user to input two numbers and raises a
+#TypeError exception if the inputs are not numerical. -- TypeErrorERROR
+#INT INPUT IS EXPECTED , BUT USER inputs float value in both cases type is Numeric
+
+# #2. Write a#Python program that prompts the user to input an integer and raises a ValueError exception
+# if the input is not a valid integer.(ValueErroR)
+
+#Write a Python program to handle a ZeroDivisionError exception (ZeroDivisionError
+#wwhen dividing a number by zero.
+
+    n1=int(input("eneter A int value"))
+    n2 = int(input("eneter Another  int value"))
+    n3=n1/n2
+    print(n3)
+'''
+
+try:
+    lst=[1,2]
+    i=int(input("enter index"))
+    print(lst[i])
+    f=open(input("enter file nAme to open"))
+
+except TypeError:
+    print("cannot input string when int is expected")
+except ValueError:
+    print("cannot input flaot when int is expected")
+except ZeroDivisionError:
+    print("cannot divide by 0")
+except IndexError:
+    print("invalid index for list")
+except FileNotFoundError:
+    print("wrong file name")
+except KeyboardInterrupt:
+    print("ctrl c haS beem pressed")
+except Exception:
+    print("this exceptu=ion has not been handled")
+finally:
+    print("application ending")
